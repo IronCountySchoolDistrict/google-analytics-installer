@@ -1,0 +1,3 @@
+<!-- Google Analytics Script Begin -->
+~[displaypref:ga_public]
+<!-- Google Analytics Script End -->

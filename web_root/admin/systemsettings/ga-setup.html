@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<!-- non framed -->
+<head>
+    <title>Google Analytics Installer</title>
+    ~[wc:commonscripts]
+    <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+    <link href="/images/css/print.css" rel="stylesheet" media="print">
+
+    <script src="/scripts/GoogleAnalyticsInstaller/ga-installer.js"></script>
+
+    <style>
+        textarea {
+            width: 500px;
+            height: 170px;
+        }
+    </style>
+</head>
+<body>
+~[wc:admin_header_css]
+<!-- breadcrumb start -->
+<a href="/admin/home.html" target="_top">~[text:psx.html.admin_systemsettings.home.start_page]</a> &gt;
+<a href="/admin/tech/home.html">~[text:psx.html.admin_systemsettings.home.system_administrator]</a> &gt;
+~[text:psx.html.admin_systemsettings.home.google_analytics]
+<!-- breadcrumb end -->
+~[wc:admin_navigation_css]
+<h1>Google Analytics Installer</h1>
+<h3>Copy and paste your tracking code here, and it will be included in every page in PowerSchool</h3>
+
+<div class="box-round">
+    <form method="POST" action="/admin/changesrecorded.white.html">
+        <table class="linkDescList">
+            <tr>
+                <td style="width: 38%;">
+                    Admin
+                </td>
+                <td style="width: 20%;">
+                    <textarea id="ga-admin" name="[pref]ga_admin"></textarea>
+                </td>
+                <td>
+                    <a id="copy-to-all" href="#">Copy To All</a>
+                </td>
+            </tr>
+            <tr>
+                <td width="38%">
+                    Teachers
+                </td>
+                <td colspan="2">
+                    <textarea name="[pref]ga_teachers"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td width="38%">
+                    Public
+                </td>
+                <td colspan="2">
+                    <textarea name="[pref]ga_public"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td width="38%">
+                    Subs
+                </td>
+                <td colspan="2">
+                    <textarea name="[pref]ga_subs"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div class="button-row">
+            ~[submitbutton]
+        </div>
+        <input type="hidden" name="ac" value="prim">
+    </form>
+</div>
+</body>
