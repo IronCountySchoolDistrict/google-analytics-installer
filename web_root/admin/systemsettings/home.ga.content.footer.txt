@@ -11,12 +11,5 @@
         var globalAPISettingsTr = $j('a:contains("Global API/SIF Settings")').parent().parent();
         var template = $j($j('#setting-template').html());
         template.insertAfter(globalAPISettingsTr);
-
-        var tableRows = $j('table').find('tr:not(".headerrow")');
-
-        // Remove all classes from these rows, and re-add the correct odd/even row class
-        tableRows.filter(':odd').removeClass('evenRow').removeClass('oddRow').addClass('oddRow');
-        tableRows.filter(':even').removeClass('evenRow').removeClass('oddRow').addClass('evenRow');
-
     }());
 </script>
