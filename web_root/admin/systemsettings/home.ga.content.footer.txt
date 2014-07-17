@@ -1,6 +1,6 @@
 <script type="text/template" id="setting-template">
     <tr>
-        <td><a href="ga-setup.html">Google Analytics</a></td>
+        <td><a href="ga-setup.html">Google Analytics Installer</a></td>
         <td>Install Google Analytics</td>
     </tr>
 </script>
