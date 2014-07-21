@@ -6,7 +6,9 @@ Google Analytics Installer is a PowerSchool customization that makes it easy to 
 This plugin requires an insertion point be added to the login pages of each portal (admin, teachers, and public). The login page for each portal is:
 
 admin: /admin/pw.html
+
 teachers: /teachers/pw.html
+
 public: /public/home.html
 
 The code that should be added to each page is:
