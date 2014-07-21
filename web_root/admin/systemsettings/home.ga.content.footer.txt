@@ -11,5 +11,11 @@
         var globalAPISettingsTr = $j('a:contains("Global API/SIF Settings")').parent().parent();
         var template = $j($j('#setting-template').html());
         template.insertAfter(globalAPISettingsTr);
+
+        var table = $j('table').eq(0);
+        var nonHeaderTrs = table.find('tr:not(".headerrow")');
+        nonHeaderTrs.removeClass('evenRow').removeClass('oddRow');
+        nonHeaderTrs.filter(':even').addClass('oddRow');
+
     }());
 </script>
