@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README #
 
 Google Analytics Installer is a PowerSchool customization that makes it easy to use Google Analytics with PowerSchool.
