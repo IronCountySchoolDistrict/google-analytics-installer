@@ -1,0 +1,19 @@
+{
+  "name": "google-analytics-installer",
+  "version": "1.0.0",
+  "description": "Easily install and enable Google Analytics on PowerSchool by automatically adding the ga script to all PS pages.",
+  "main": "",
+  "scripts": {
+    "test": "mocha-casperjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronCountySchoolDistrict/find-me.git"
+  },
+  "author": "IronCountySchoolDistrict",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IronCountySchoolDistrict/find-me/issues"
+  },
+  "homepage": "https://github.com/IronCountySchoolDistrict/find-me#readme"
+}
