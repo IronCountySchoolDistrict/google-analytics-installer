@@ -1,0 +1,1 @@
+<script src="/scripts/google-analytics-installer/js/ga-installer.js"></script>
