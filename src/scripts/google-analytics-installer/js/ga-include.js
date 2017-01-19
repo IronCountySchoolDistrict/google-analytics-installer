@@ -1,8 +1,9 @@
+import $ from 'jquery';
+import fetch from 'fetch';
 
-(function ($){
-  $(document).ready(function() {
-
-    if($('a:contains("Global API/SIF Settings")').length){
+export default function () {
+  $(() => {
+    if ($('a:contains("Global API/SIF Settings")').length) {
       var globalAPISettingsTr = $('a:contains("Global API/SIF Settings")').closest("tr");
 
       fetch('/scripts/google-analytics-installer/html/analytics_table_fragment.html')
@@ -17,16 +18,15 @@
         })
     }
 
-    if($('#copy-to-all').length){
-      $('#copy-to-all').on('click', function(event) {
+    if ($('#copy-to-all').length) {
+      $('#copy-to-all').on('click', function (event) {
         event.preventDefault();
         var nonAdminTextareas = $('.non-admin');
         var adminTextareaVal = $('#ga-admin').val();
-        $.each(nonAdminTextareas, (index,textarea) => {
-            $(textarea).val(adminTextareaVal);
+        $.each(nonAdminTextareas, (index, textarea) => {
+          $(textarea).val(adminTextareaVal);
         });
       });
     }
-
   });
-})($j);
+}
