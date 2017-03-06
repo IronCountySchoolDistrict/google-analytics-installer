@@ -1,13 +1,14 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.js"></script>
+
 <!-- GA -->
 <script>
     require.config({
         paths: {
-            fetch: '//cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch',
             'ga-include': '/scripts/google-analytics-installer/js/ga-include'
         }
     });
 
-    require(['ga-include'], (gaInclude) => {
+    require(['ga-include'], function(gaInclude) {
         gaInclude.default();
     });
 </script>

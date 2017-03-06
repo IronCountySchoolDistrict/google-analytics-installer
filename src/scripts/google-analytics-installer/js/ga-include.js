@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import fetch from 'fetch';
 
 export default function () {
   $(() => {
